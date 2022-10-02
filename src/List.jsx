@@ -42,7 +42,7 @@ const WrappedListComponent = ({
   const click = index => {
     setSelectedIndex(index);
   };
-
+// for Memoization of function 
   const handleClick = useCallback((index) =>{
         click(index);
   },[])
